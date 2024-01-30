@@ -13,9 +13,9 @@
    <link href="Res/styles/shared.css" rel="stylesheet" type="text/css">
    <link href="Res/styles/DynamicOutline.css" rel="stylesheet" type="text/css">
 <!-- VIDEO.JS - Change URLs to wherever Video.js files will be hosted -->
-    <link href="/video-js/video-js.css" rel="stylesheet" type="text/css">
+    <link href="../video-js/video-js.css" rel="stylesheet" type="text/css">
     <!-- video.js must be in the <head> for older IEs to work. -->
-    <script src="/video-js/video.js"></script>
+    <script src="../video-js/video.js"></script>
     <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
     <script>videojs.options.flash.swf = "video-js.swf";</script>
 <!-- END VIDEO.JS -->
@@ -255,7 +255,7 @@ no-one is watching.</div></div>
 <!--END PAGE BODY ITEM-->
 <!--BEGIN PAGE BODY ITEM-->
 <tr class="topic">
-  <td class="main" valign="top" colspan="2">
+  <td class="main" valign="top">
     <table>
       <tr class="topicHeader">
         <td class="topicImageColumn">
@@ -270,23 +270,17 @@ no-one is watching.</div></div>
         </td>
       </tr>
     </table>
-<video id="player_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="604" height="462">
-    <source src="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-12.mp4" type='video/mp4' />
-</video>
-<ul id="playlist">
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-12.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 12</li>
-</ul>
+    <video id="player_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" style="min-width: 600px; min-height: 400px;">
+        <source src="./clips/SonambulaMoebius-12.mp4" type='video/mp4' />
+    </video>
+    <ul id="playlist">
+      <li data-loc="./clips/SonambulaMoebius-12.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 12</li>
+    </ul>
      <div class="topicTextNotes"><div align="left"><i>La son&#225;mbula</i> is copyright 1998 by
-Alameda Films, Argentina.</div>
-<div align="left">All clips in this lecture are used under the
-provisions for "criticism and review" of the UK Copyright Designs
-and Patents Act 1988 (Amended), Section 30.</div></div>
-
-
-
-
-
-
+      Alameda Films, Argentina.</div>
+      <div align="left">All clips in this lecture are used under the
+      provisions for "criticism and review" of the UK Copyright Designs
+      and Patents Act 1988 (Amended), Section 30.</div></div>
   </td>
   <td class="right" valign="top">
 <!--right body column empty-->
@@ -339,7 +333,7 @@ and Patents Act 1988 (Amended), Section 30.</div></div>
       <td class="right">
          <div class="hyperlink">
             <span>   
-               <a href="http://www.latin-american.cam.ac.uk/sp13/resources" target="_blank">SP13 Learning Resources</a>
+               <a href="https://www.mmll.cam.ac.uk/sp13/" target="_blank">SP13 Learning Resources</a>
             </span>
          </div>
       </td>
@@ -348,7 +342,7 @@ and Patents Act 1988 (Amended), Section 30.</div></div>
       <td class="right">
          <div class="lastUpdated">
             <span>Last updated:</span>
-            <span>3-02-14</span>
+            <span>30-01-24</span>
          </div>
       </td>
    </tr>

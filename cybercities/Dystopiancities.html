@@ -13,9 +13,9 @@
    <link href="Res/styles/shared.css" rel="stylesheet" type="text/css">
    <link href="Res/styles/DynamicOutline.css" rel="stylesheet" type="text/css">
 <!-- VIDEO.JS - Change URLs to wherever Video.js files will be hosted -->
-    <link href="/video-js/video-js.css" rel="stylesheet" type="text/css">
+    <link href="../video-js/video-js.css" rel="stylesheet" type="text/css">
     <!-- video.js must be in the <head> for older IEs to work. -->
-    <script src="/video-js/video.js"></script>
+    <script src="../video-js/video.js"></script>
     <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
     <script>videojs.options.flash.swf = "video-js.swf";</script>
 <!-- END VIDEO.JS -->
@@ -295,22 +295,22 @@ memory.</div></div>
       </tr>
     </table>
 <video id="player_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="1026" height="454">
-    <source src="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-3.mp4" type='video/mp4' />
+    <source src="./clips/SonambulaMoebius-3.mp4" type='video/mp4' />
 </video>
 <ul id="playlist">
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-3.mp4" data-type="video/mp4"><i>Blade Runner</i> CLIP 3</li>
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-4.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 4</li>
+  <li data-loc="./clips/SonambulaMoebius-3.mp4" data-type="video/mp4"><i>Blade Runner</i> CLIP 3</li>
+  <li data-loc="./clips/SonambulaMoebius-4.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 4</li>
 </ul>
 <script>videojs("player_1").ready(function(){
     var player = this;
     var nextTitle = function(){
-      if (player.currentSrc() == "http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-3.mp4") {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-4.mp4");
+      if (player.currentSrc() == "./clips/SonambulaMoebius-3.mp4") {
+        player.src("./clips/SonambulaMoebius-4.mp4");
         player.width(604);
         player.height(462);
         player.play();
       } else {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-3.mp4");
+        player.src("./clips/SonambulaMoebius-3.mp4");
         player.width(1026);
         player.height(454);
       }
@@ -712,26 +712,26 @@ deployed even here to separate dream representations and the "real"
       </tr>
     </table>
 <video id="player_2" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="604" height="462">
-    <source src="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-5.mp4" type='video/mp4' />
+    <source src="./clips/SonambulaMoebius-5.mp4" type='video/mp4' />
 </video>
 <ul id="playlist">
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-5.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 5</li>
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-6.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 6</li>
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-7.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 7</li>
+  <li data-loc="./clips/SonambulaMoebius-5.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 5</li>
+  <li data-loc="./clips/SonambulaMoebius-6.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 6</li>
+  <li data-loc="./clips/SonambulaMoebius-7.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 7</li>
 </ul>
 <script>videojs("player_2").ready(function(){
     var player = this;
     var nextTitle2 = function(){
-      if (player.currentSrc() == "http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-5.mp4") {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-6.mp4");
+      if (player.currentSrc() == "./clips/SonambulaMoebius-5.mp4") {
+        player.src("./clips/SonambulaMoebius-6.mp4");
         player.play();
       } else {
-      if (player.currentSrc() == "http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-6.mp4") {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-7.mp4");
+      if (player.currentSrc() == "./clips/SonambulaMoebius-6.mp4") {
+        player.src("./clips/SonambulaMoebius-7.mp4");
         player.play();
       } else {
-      if (player.currentSrc() == "http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-7.mp4") {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-5.mp4");
+      if (player.currentSrc() == "./clips/SonambulaMoebius-7.mp4") {
+        player.src("./clips/SonambulaMoebius-5.mp4");
       } } }
     };
     player.on("ended", nextTitle2);
@@ -851,20 +851,20 @@ without orientation, as we see in the following two clips.</div></div>
     </table>
 
 <video id="player_3" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="604" height="462">
-    <source src="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-8.mp4" type='video/mp4' />
+    <source src="./clips/SonambulaMoebius-8.mp4" type='video/mp4' />
 </video>
 <ul id="playlist">
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-8.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 8</li>
-  <li data-loc="http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-9.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 9</li>
+  <li data-loc="./clips/SonambulaMoebius-8.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 8</li>
+  <li data-loc="./clips/SonambulaMoebius-9.mp4" data-type="video/mp4"><i>Sonámbula</i> CLIP 9</li>
 </ul>
 <script>videojs("player_3").ready(function(){
     var player = this;
     var nextTitle3 = function(){
-      if (player.currentSrc() == "http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-8.mp4") {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-9.mp4");
+      if (player.currentSrc() == "./clips/SonambulaMoebius-8.mp4") {
+        player.src("./clips/SonambulaMoebius-9.mp4");
         player.play();
       } else {
-        player.src("http://www.latin-american.cam.ac.uk/spanish/sp13/cine/clips/SonambulaMoebius-8.mp4");
+        player.src("./clips/SonambulaMoebius-8.mp4");
       }
     };
     player.on("ended", nextTitle3);
@@ -935,7 +935,7 @@ and Patents Act 1988 (Amended), Section 30.</div></div>
       <td class="right">
          <div class="hyperlink">
             <span>   
-               <a href="http://www.latin-american.cam.ac.uk/sp13/resources" target="_blank">SP13 Learning Resources</a>
+               <a href="https://www.mmll.cam.ac.uk/sp13/" target="_blank">SP13 Learning Resources</a>
             </span>
          </div>
       </td>
@@ -944,7 +944,7 @@ and Patents Act 1988 (Amended), Section 30.</div></div>
       <td class="right">
          <div class="lastUpdated">
             <span>Last updated:</span>
-            <span>3-02-14</span>
+            <span>30-01-24</span>
          </div>
       </td>
    </tr>
