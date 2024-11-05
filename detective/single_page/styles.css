@@ -1,0 +1,36 @@
+/*  Cascading Style Sheet for the Simple Outline HTML export */
+
+/* default font and size */
+body { margin-left: 10%; margin-right: 10%; font-family: Verdana, Sans-Serif; font-size: 12pt } 
+
+:link    { color: rgb(0,0,255)  } /* for unvisited links */
+:visited { color: rgb(128,0,128) } /* for visited links */
+:active  { color: rgb(255,0,0) } /* when link is clicked */
+
+a:hover   { color: rgb(255,0,0) } /* when mouse is over link */
+
+.tableOfContents { margin-top: 0.5em; margin-bottom: 0.5em }
+.tocLevel1 { margin-left:  2em }
+.tocLevel2 { margin-left:  4em }
+.tocLevel3 { margin-left:  6em }
+.tocLevel4 { margin-left:  8em }
+.tocLevel5 { margin-left: 10em }
+.tocLevelx { margin-left: 12em }
+
+.centralTopic { font-size: 15pt; font-weight: bold; margin-bottom: 0.5em }	
+.mainTopic    { font-size:  13pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em }
+.subtopic     { font-size:  12pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em }
+.notes        { font-size:  12pt; margin-bottom: 1em }
+
+.topicRule { margin-top: 1em }
+
+.relatedItems          { margin-top: 1em }
+.relatedItemsHeader    { font-size:  7pt; font-weight: bold; margin-top: 1em; margin-bottom: 0.5em }
+.relatedItemHyperlinks { margin-bottom: 1em }
+.hyperlink             { font-size:  7pt; margin-bottom: 1em }
+
+.footer            { margin-top: 1em }
+.footerTable       { width: 100% }
+.footerText        { }
+.footerTop         { }
+.footerLastUpdated { }
