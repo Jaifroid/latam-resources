@@ -20,7 +20,6 @@ endpoints:
       models:
         default:
           - mistral-large-latest
-          - mistral-large-pixtral-2411
           - mistral-medium-latest
           - pixtral-large-latest
         fetch: false
