@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades Enredadas / Entangled Cities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+        
+        .image-section {
+            flex: 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            background-color: #83b7bf;
+        }
+        
+        .content-section {
+            flex: 4;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+        }
+        
+        .city-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(129, 255, 252);
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            font-size: 4vw;
+            font-weight: bold;
+            width: 85%;
+            max-width: 600px;
+            letter-spacing: 2px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .overlay-text .title-es {
+            margin-bottom: 15px;
+        }
+        
+        .title, .subtitle {
+            text-align: center;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .title {
+            font-size: 2.4rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+        
+        .date {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .info {
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: smaller;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .logos {
+            margin-top: auto;
+        }
+        
+        .logo-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            height: 60px;
+            max-width: 200px;
+            object-fit: contain;
+        }
+
+        .catz-logo {
+            height: 60px;
+            max-width: 300px;
+            object-fit: contain;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 5px;
+            line-height: normal;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 1200px) {
+            .overlay-text {
+                font-size: 3.5vw;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .image-section {
+                min-height: 50vh;
+                flex: 1;
+            }
+            
+            .content-section {
+                flex: 1;
+                padding: 30px 20px;
+            }
+            
+            .overlay-text {
+                font-size: 5vw;
+                max-width: 80%;
+                padding: 15px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.6rem;
+            }
+            
+            .logo {
+                height: 50px;
+            }
+
+            .catz-logo {
+                height: 50px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .logo {
+                height: 40px;
+            }
+
+            .catz-logo {
+                height: 40px;
+            }
+            
+            .overlay-text {
+                font-size: 6vw;
+                padding: 10px;
+            }
+            
+            .title {
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+            
+            .subtitle {
+                font-size: 1.4rem;
+                margin-bottom: 20px;
+            }
+            
+            .date, .info {
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="images/Entangled_building_iknots_image_fx_.jpg" alt="Entangled Cities Artwork" class="city-image">
+            <div class="overlay-text">
+                <div class="title-es">CIUDADES ENREDADAS</div>
+                <div class="title-en">ENTANGLED CITIES</div>
+            </div>
+        </div>
+        <div class="content-section">
+            <h1 class="subtitle">Espacios de improvisación en las culturas urbanas contemporáneas de América Latina</h1>
+            <h2 class="title">Spaces of Improvisation in Contemporary Latin American Urban Culture</h2>
+            <div class="date">2nd - 3rd May 2025</div>
+            <div class="info">Useful links:
+                <ul>
+                    <li><a href="https://labs.google/fx/tools/image-fx" target="_blank"><b>Google ImageFX: free image generator</b> <i>(log in with a Google account, e.g. gmail)</i></a></li>
+                    <li><a href="https://librechat-production-10b4.up.railway.app/" target="_blank"><b>LibreChat: open-source AI conversations</b> <i>(click sign up to access: does not send you mail or retain address, privately hosted by us, choose preferred model from dropdown at top)</i></a></li>
+                    <li><a href="https://1drv.ms/f/c/22fada84c87cbf44/EgYNrmcjFdRItRqXcyC5UJ0ByIl-K2wUiql-qOK4zg8WVQ?e=7MMz3V" target="_blank"><b>Upload folder</b> <i>(copy image/poem/text into a single-page Word document, include your name in filename, and upload here; alternatively, email a single image/photo to egk10@cam.ac.uk)</i></a></li>
+                    <li><a href="images/splash.png" target="_blank">Symposium splash screen!</a></li>
+                </ul>
+            </div>
+            
+            <div class="logos">
+                <div class="logo-row">
+                    <img src="images/st_catharines_logo.png" alt="St Catharine's College Cambridge" class="catz-logo">
+                    <img src="images/cambridge_university2.png" alt="University of Cambridge" class="logo">
+                </div>
+                <div class="logo-row">
+                    <img src="images/slas_logo.png" alt="SLAS Logo" class="logo">
+                    <img src="images/clas_logo_better.png" alt="Centre of Latin American Studies" class="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
