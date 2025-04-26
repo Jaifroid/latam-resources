@@ -19,9 +19,9 @@ endpoints:
       baseURL: "https://api.mistral.ai/v1"
       models:
         default:
-          - mistral-large-latest
-          - mistral-medium-latest
           - pixtral-large-latest
+          - pixtral-medium-latest
+          - mistral-large-latest
         fetch: false
       titleConvo: true
       titleMethod: "completion"
